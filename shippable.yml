@@ -19,6 +19,3 @@ script:
     - echo $BUILD_NUMBER > ./shippable/buildoutput/config.txt
    
 
-after_script:
-    - ./node_modules/.bin/istanbul cover grunt -- -u tdd
-    - ./node_modules/.bin/istanbul report cobertura --dir  ./shippable/codecoverage/
